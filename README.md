@@ -1,4 +1,4 @@
-# autosub-ahk: A AutoSub GUI, written in AuthHotkey
+# autosub-ahk: A AutoSub GUI, written in AutoHotkey
 
 > Author: Jerry Jian
   * YouTube: https://www.youtube.com/channel/UC2xBvmv-lhsY4suxv46lplg?view_as=subscriber
