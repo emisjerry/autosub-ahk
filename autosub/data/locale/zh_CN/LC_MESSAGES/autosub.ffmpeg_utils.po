@@ -1,0 +1,60 @@
+# autosub ffmpeg_utils.py translation file.
+# Copyright (C) 2019 BingLingFanSub
+# This file is distributed under the same license as the PACKAGE package.
+# BingLingFanSub <binglingfansub@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-02 11:00+0800\n"
+"PO-Revision-Date: 2019-07-28 15:09+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.2.3\n"
+
+#: autosub/ffmpeg_utils.py:98
+msgid ""
+"Error: ffmpeg can't split your file. Check your audio processing options."
+msgstr "错误：ffmpeg无法分割你的文件。检查一下你的音频处理选项。"
+
+#: autosub/ffmpeg_utils.py:123
+msgid ""
+"ffprobe(ffmpeg) can't get video fps.\n"
+"It is necessary when output is \".sub\"."
+msgstr ""
+"ffprobe（ffmpeg）无法获取到视频的帧率。\n"
+"当输出格式是\".sub\"时，需要获取帧率。"
+
+#: autosub/ffmpeg_utils.py:126
+msgid ""
+"Input your video fps. Any illegal input will regard as \".srt\" instead.\n"
+msgstr "输入你视频的帧率。任何非法的值会被当作\".srt\"格式处理。\n"
+
+#: autosub/ffmpeg_utils.py:133
+msgid "Use \".srt\" instead."
+msgstr "改用\".srt\"格式。"
+
+#: autosub/ffmpeg_utils.py:210
+msgid ""
+"Warning: Dependency ffmpeg-normalize not found on this machine. Try default "
+"method."
+msgstr ""
+"警告：依赖ffmpeg-normalize未在这台电脑上找到。尝试默认的方法去转换格式。"
+
+#: autosub/ffmpeg_utils.py:222
+msgid ""
+"There is already a file with the same name in this location: \"{dest_name}\"."
+msgstr "在此处已有同名文件：\"{dest_name}\"。"
+
+#: autosub/ffmpeg_utils.py:225
+msgid "Input a new path (including directory and file name) for output file.\n"
+msgstr "为输出文件输入一个新的路径（包括路径和文件名）。\n"
+
+#: autosub/ffmpeg_utils.py:243 autosub/ffmpeg_utils.py:276
+msgid "Audio pre-processing failed. Try default method."
+msgstr "音频预处理失败。尝试默认的方法去转换格式。"

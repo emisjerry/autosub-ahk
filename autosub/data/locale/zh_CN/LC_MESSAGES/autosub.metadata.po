@@ -1,0 +1,34 @@
+# autosub metadata.py translation file.
+# Copyright (C) 2019 BingLingFanSub
+# This file is distributed under the same license as the PACKAGE package.
+# BingLingFanSub <binglingfansub@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-28 14:53+0800\n"
+"PO-Revision-Date: 2019-07-27 20:10+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.2.3\n"
+
+#: autosub/metadata.py:16
+msgid "Auto-generate subtitles for video/audio/subtitles file."
+msgstr "为视频/音频/字幕文件自动生成字幕。"
+
+#: autosub/metadata.py:18
+msgid ""
+"Autosub is an automatic subtitles generating utility. It can detect speech "
+"regions automatically by using Auditok, split the audio files according to "
+"regions by using ffmpeg, transcribe speech based on Chrome-Web-Speech-api "
+"and translate the subtitles' text by using py-googletrans. It currently not "
+"supports the latest Google Cloud APIs."
+msgstr ""
+"Autosub是一个字幕自动生成工具。它能使用Auditok来自动检测语音区域，通过ffmpeg"
+"根据语音区域来切割音频，通过Chrome-Web-Speech-api将语音转为文字，以及通过py-"
+"googletrans将字幕文本翻译。目前暂时不支持最新的Google Cloud API。"

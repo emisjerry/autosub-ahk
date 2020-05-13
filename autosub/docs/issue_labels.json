@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Priority: Critical",
+    "color": "#F48FB1"
+  },
+  {
+    "name": "Priority: High",
+    "color": "#EF9A9A"
+  },
+  {
+    "name": "Priority: Low",
+    "color": "#9FA8DA"
+  },
+  {
+    "name": "Priority: Medium",
+    "color": "#CE93D8"
+  },
+  {
+    "name": "Status: Abandoned",
+    "color": "#BCAAA4"
+  },
+  {
+    "name": "Status: Accepted",
+    "color": "#a5d6a7"
+  },
+  {
+    "name": "Status: Blocked",
+    "color": "#B0BEC5"
+  },
+  {
+    "name": "Status: Completed",
+    "color": "#FDF6E3"
+  },
+  {
+    "name": "Status: In Progress",
+    "color": "#EEE8D5"
+  },
+  {
+    "name": "Status: Review Needed",
+    "color": "#FFF59D"
+  },
+  {
+    "name": "Type: Bug",
+    "color": "#FF6E40"
+  },
+  {
+    "name": "Type: Duplicated",
+    "color": "#B0BEC5"
+  },
+  {
+    "name": "Type: Enhancement",
+    "color": "#80DEEA"
+  },
+  {
+    "name": "Type: Help Wanted",
+    "color": "#FFE082"
+  },
+  {
+    "name": "Type: Invalid",
+    "color": "#B0BEC5"
+  },
+  {
+    "name": "Type: Maintenance",
+    "color": "#80cbc4"
+  },
+  {
+    "name": "Type: Pin",
+    "color": "#00b0ff"
+  },
+  {
+    "name": "Type: Question",
+    "color": "#E6EE9C"
+  }
+]

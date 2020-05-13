@@ -1,0 +1,46 @@
+# autosub lang_code_utils.py translation file.
+# Copyright (C) 2019 BingLingFanSub
+# This file is distributed under the same license as the PACKAGE package.
+# BingLingFanSub <binglingfansub@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-27 20:08+0800\n"
+"PO-Revision-Date: 2019-07-27 15:24+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.2.3\n"
+
+#: autosub/lang_code_utils.py:113
+msgid "Now match lang codes."
+msgstr "现在匹配语言代码。"
+
+#: autosub/lang_code_utils.py:116
+msgid "The value of arg of \"-mns\"/\"--min-score\" isn't legal."
+msgstr "\"-mns\"/\"--min-score\"的参数的值不合法。"
+
+#: autosub/lang_code_utils.py:120
+msgid "Input:"
+msgstr "输入："
+
+#: autosub/lang_code_utils.py:124
+msgid "Score above:"
+msgstr "分数高于："
+
+#: autosub/lang_code_utils.py:133
+msgid "No lang codes been matched."
+msgstr "没有匹配到语言代码。"
+
+#: autosub/lang_code_utils.py:137
+msgid "Match result"
+msgstr "匹配结果"
+
+#: autosub/lang_code_utils.py:138
+msgid "Score (0-100)"
+msgstr "分数（0-100）"
