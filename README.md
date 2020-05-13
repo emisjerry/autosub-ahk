@@ -6,5 +6,5 @@
 
 ### Screen snapshot:
 
-![1](https://lh3.googleusercontent.com/pw/ACtC-3d9T6uz6enya9GaFIVUeFVSD2gBxamUYjXkXwCEs487IHPGKuo_jkXu3s0CsH_Yu9DQNgdjkT23tZJceay0AVgixhaJLM-mGy9agR1-YTTuEKPAVbflqcmtMPbbNMe5rLkQCoQ5cIpraakjO4QHLNtG9w=w664-h639-no?authuser=0)
+![1](https://lh3.googleusercontent.com/pw/ACtC-3dyOIgAjfAR89WkaveDvvr9LnP00RgT_8I0DQCJv8RfqNTkwf79cJ-M1Wb4nTur6XVmfTCo_PfHuiUSA5JaEb6CUxSGjLOvLEYVke-hvbYTBCtZShfYK5-RhKRczc1h9IsciFwf-k2Wz_3SHvlGfeR0lw=w664-h639-no?authuser=0)
 
