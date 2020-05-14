@@ -5,6 +5,7 @@
 ;   Blog: http://jdev.tw/blog
 ; v1.0 2020/05/13
 ;   Call gen.bat to generate subtitle. You can change the autosub parameters in gen.bat.
+; v1.0.1 2020/05/14 minor changes
 ; ===========================
 #SingleInstance Force
 #NoEnv
@@ -18,7 +19,7 @@ global videoFiles
 global VIDEO_FORMAT_FAILED
 videoFiles := []
 
-version := "v1.0"
+version := "v1.0.1"
 ; 多語系設定
 if (A_Language in 0404, 0c04, 1404) {  ; Chinese_Taiwan, Hong Kong, Macau
   TITLE := "AutoSub-AHK 字幕產生器"
@@ -27,6 +28,7 @@ if (A_Language in 0404, 0c04, 1404) {  ; Chinese_Taiwan, Hong Kong, Macau
   VIDEO_FILES := "選擇影片檔案(&S)"
   OUTPUT_FILENAME := "輸出檔名(&O)"
   OUTPUT_MSG := "(副檔名必須為.txt或.srt)"
+  DRAG_MSG := "拖曳功能已啟用"
   BTN_OK := "確定執行(&E)"
   BTN_CLOSE := "關閉(&C)"
   VIDEO_SELECT_TITLE := "選擇影片檔案(可複選)"
@@ -38,6 +40,7 @@ if (A_Language in 0404, 0c04, 1404) {  ; Chinese_Taiwan, Hong Kong, Macau
   VIDEO_FILES := "选择视频文件(&S)"
   OUTPUT_FILENAME := "输出档名(&O)"
   OUTPUT_MSG := "(副档名必须为.txt或.srt)"
+  DRAG_MSG := "拖拽功能已启用"  
   BTN_OK := "确定执行(&E)"
   BTN_CLOSE := "关闭(&C)"
   VIDEO_SELECT_TITLE := "选择影片文件(可复选)"
@@ -49,6 +52,7 @@ if (A_Language in 0404, 0c04, 1404) {  ; Chinese_Taiwan, Hong Kong, Macau
   VIDEO_FILES := "&Select Video File(s)"
   OUTPUT_FILENAME := "&Output file name"
   OUTPUT_MSG := "(File extension must ends with .txt or .srt)"
+  DRAG_MSG := "Drag and Drop Enabled"
   BTN_OK := "&Execute"
   BTN_CLOSE := "&Close"
   VIDEO_SELECT_TITLE := "Select video file(s)"
@@ -63,7 +67,7 @@ Gui Add, ComboBox, vCmbLanguage x12 y56 w281, %LANGUAGES%
 Gui Font
 Gui Font, s12
 Gui Add, Text, x-152 y0 w120 h24 +0x200, %VIDEO_LANGUAGE%
-Gui Add, Text, x200 y110 w120 h24 +0x200, Drag and Drop
+Gui Add, Text, x200 y110 w250 h24 +0x200, %DRAG_MSG%
 Gui Font
 Gui Font, s12
 Gui Add, Button, gbtnSelectFiles x12 y104 w180 h35, %VIDEO_FILES%
@@ -88,7 +92,7 @@ Gui Font, s12
 Gui Add, Text, x12 y24 w120 h24 +0x200, %VIDEO_LANGUAGE%
 Gui Font
 Gui Font, s12
-Gui Add, Text, x150 y304 w204 h24 +0x200, %OUTPUT_MSG%
+Gui Add, Text, x150 y304 w300 h24 +0x200, %OUTPUT_MSG%
 Gui Font
 Gui Add, Text, x6 y380 w507 h2 +0x10
 
@@ -156,12 +160,22 @@ btnOK(CtrlHwnd, GuiEvent, EventInfo, ErrLevel := "") {
     videoFilename := element
     if (index = 1) {
       newFilename := deleteOldFile(edtOutputFilename, Language)
-      Run %A_ScriptDir%\gen.bat %Language% "%videoFilename%" "%edtOutputFilename%" "%newFilename%"
+      if (InStr(edtOutputFilename, ".txt") > 0) {
+        batFilename := "gen-txt.bat"
+      } else {
+        batFilename := "gen.bat"
+      }
+      Run %A_ScriptDir%\%batFilename% %Language% "%videoFilename%" "%edtOutputFilename%" "%newFilename%"
     } else {
       edtOutputFilename := videoFilename
       StringReplace edtOutputFilename, edtOutputFilename, .mp4, .srt
       newFilename := deleteOldFile(edtOutputFilename, Language)
-      Run %A_ScriptDir%\gen.bat %Language% "%videoFilename%" "%edtOutputFilename%" "%newFilename%"    
+      if (InStr(edtOutputFilename, ".txt") > 0) {
+        batFilename := "gen-txt.bat"
+      } else {
+        batFilename := "gen.bat"
+      }
+      Run %A_ScriptDir%\%batFilename% %Language% "%videoFilename%" "%edtOutputFilename%" "%newFilename%"
     }
   }
   ExitApp
@@ -184,7 +198,7 @@ Return
 GuiDropFiles(GuiHwnd, FileArray, CtrlHwnd, X, Y) {
   videoFiles := []
   for i, file in FileArray 
-  {
+  { 
     ;MsgBox File %i% is:`n%file%
     if (chkVideoFile(file)) {
       videoFiles.push(file)
