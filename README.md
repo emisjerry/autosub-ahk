@@ -16,6 +16,13 @@
 2. 可使用滑鼠拖曳方式加入影片檔案
 3. 輸出檔的副檔名為.txt時產生純文字格式，否則產生.srt格式
 4. 輸出檔名產生時會自動加入語音語言代碼，輸入時不須輸入語言代碼
+5. 真正執行語音處理的是透過gen.bat或gen-txt.bat來調用autosub.exe來執行：
+    * gen.bat: 產生.srt的字幕檔
+    * gen-txt.bat: 產生純文字格式的字幕檔
+6. 可自行修改gen.bat或gen-txt.bat以變更autosub.exe的執行時參數
+7. autosub.exe -h 即會顯示可使用的參數
+8. autosub.exe -V 可顯示autosub的版本
+9. 包裝在release zip檔裡的autosub是0.5.7-Alpha版，日後可自行更新autosub子目錄即可改版
 
 ### 其他說明
 * 有問題或建議請直接建立[Issue](https://github.com/emisjerry/autosub-ahk/issues)
