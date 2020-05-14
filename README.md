@@ -15,6 +15,8 @@
 1. 以AutoHotkey腳本語言撰寫，只要Windows有安裝AutoHotkey，即可修改直接執行
 2. 可使用滑鼠拖曳方式加入影片檔案
 3. 輸出檔的副檔名為.txt時產生純文字格式，否則產生.srt格式
+4. 輸出檔名產生時會自動加入語音語言代碼，輸入時不須輸入語言代碼
 
 ### 其他說明
 * 有問題或建議請直接建立[Issue](https://github.com/emisjerry/autosub-ahk/issues)
+* 下載：[release](https://github.com/emisjerry/autosub-ahk/releases)
