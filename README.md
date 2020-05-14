@@ -3,8 +3,8 @@
 由語言產生字幕的[AutoSub](https://github.com/BingLingGroup/autosub)由中國的冰靈字幕組維護、修改，為了方便使用，以AutoHotkey寫了圖形介面工具，以方便使用AutoSub。
 
 > Author: Jerry Jian
-  * YouTube: https://www.youtube.com/channel/UC2xBvmv-lhsY4suxv46lplg?view_as=subscriber
-  * Blog: http://jdev.tw/blog
+>  * YouTube: https://www.youtube.com/channel/UC2xBvmv-lhsY4suxv46lplg?view_as=subscriber
+>  * Blog: http://jdev.tw/blog
 
 ### Screen snapshot:
 
