@@ -27,3 +27,8 @@
 ### 其他說明
 * 有問題或建議請直接建立[Issue](https://github.com/emisjerry/autosub-ahk/issues)
 * 下載：[release](https://github.com/emisjerry/autosub-ahk/releases)
+
+### How to add language
+* Changes LANGUAGES variable in autosub-ahk.ahk, add additional language code and description.
+  1. Find your language code: 'autosub\\autosub.exe -lsc'
+  2. Paste the code after LANGUAGE variable that starts with a pipe sign (|)
