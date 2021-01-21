@@ -11,6 +11,7 @@
 ; v1.0.4 2020/05/23 Add test.bat 
 ; v1.0.5 2020/09/02 Add French language
 ; v1.0.6 2020/09/21 Add tr-tr Turkish (Turkey)
+; v1.0.7 2021/01/21 Add ru-ru Russian
 ; ===========================
 #SingleInstance Force
 #NoEnv
@@ -25,11 +26,11 @@ global VIDEO_FORMAT_FAILED
 videoFiles := []
 VALID_VIDEO_FORMAT := "*.mp4;*.mp3;*.wav"
 
-version := "v1.0.5"
+version := "v1.0.7"
 ; 多語系設定
 if (A_Language in 0404, 0c04, 1404) {  ; Chinese_Taiwan, Hong Kong, Macau
   TITLE := "AutoSub-AHK 字幕產生器"
-  LANGUAGES := "zh-TW 中文(繁體)||zh-CN 中文(簡體)|en-US English|ja-JP 日本語|ko-KR 한국어|yue-hant-hk 粵語|fr-fr French(France)|tr-tr Turkish (Turkey)"
+  LANGUAGES := "zh-TW 中文(繁體)||zh-CN 中文(簡體)|en-US English|ja-JP 日本語|ko-KR 한국어|yue-hant-hk 粵語|fr-fr French(France)|tr-tr Turkish (Turkey)|ru-ru Russian"
   VIDEO_LANGUAGE := "影片語言(&L)"
   VIDEO_FILES := "選擇影片檔案(&S)"
   OUTPUT_FILENAME := "輸出檔名(&O)"
@@ -41,7 +42,7 @@ if (A_Language in 0404, 0c04, 1404) {  ; Chinese_Taiwan, Hong Kong, Macau
   VIDEO_FORMAT_FAILED := "影片副檔名必須是 " . VALID_VIDEO_FORMAT
 } else if (A_Language in 0804,1004) {  ; Chinese_PRC, singapore
   TITLE := "AutoSub-AHK 字幕产生器"
-  LANGUAGES := "zh-TW 中文(繁体)|zh-CN 中文(简体)||en-US English|ja-JP 日本语|ko-KR 한국어|yue-hant-hk 粤语|fr-fr French(France)|tr-tr Turkish (Turkey)"
+  LANGUAGES := "zh-TW 中文(繁体)|zh-CN 中文(简体)||en-US English|ja-JP 日本语|ko-KR 한국어|yue-hant-hk 粤语|fr-fr French(France)|tr-tr Turkish (Turkey)|ru-ru Russian"
   VIDEO_LANGUAGE := "视频语言(&L)"
   VIDEO_FILES := "选择视频文件(&S)"
   OUTPUT_FILENAME := "输出档名(&O)"
@@ -53,7 +54,7 @@ if (A_Language in 0404, 0c04, 1404) {  ; Chinese_Taiwan, Hong Kong, Macau
   VIDEO_FORMAT_FAILED := "影片副档名必须为 " . VALID_VIDEO_FORMAT
 } else {
   TITLE := "AutoSub-AHK SubTITLEs Generator"
-  LANGUAGES := "zh-TW Chinese(Traditional)|zh-CN Chinese(Simplified)|en-US English||ja-JP Japanese|ko-KR Korean|yue-hant-hk Hong Kong|fr-fr French(France)|tr-tr Turkish (Turkey)"
+  LANGUAGES := "zh-TW Chinese(Traditional)|zh-CN Chinese(Simplified)|en-US English||ja-JP Japanese|ko-KR Korean|yue-hant-hk Hong Kong|fr-fr French(France)|tr-tr Turkish (Turkey)|ru-ru Russian"
   VIDEO_LANGUAGE := "Video &Language"
   VIDEO_FILES := "&Select Video File(s)"
   OUTPUT_FILENAME := "&Output file name"
