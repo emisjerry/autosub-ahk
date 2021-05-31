@@ -29,6 +29,9 @@
 * 下載：[release](https://github.com/emisjerry/autosub-ahk/releases)
 
 ### How to add language
-* Changes LANGUAGES variable in autosub-ahk.ahk, add additional language code and description.
-  1. Find your language code: 'autosub\\autosub.exe -lsc'
-  2. Paste the code after LANGUAGE variable that starts with a pipe sign (|)
+1. Find your language code(lsc=List Speech Code): 'autosub\\autosub.exe -lsc'
+2. Copy the speech code into clipboard
+3. Modify autosub-ahk.ini
+  3.1. add One to [LANGUAGE] Count
+  3.2. add New counter=speech_code descition in [zh_TW], [zh_CN] and [en_US]
+  
